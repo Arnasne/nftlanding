@@ -114,7 +114,7 @@ header.container {
   inset: 0;
   border-radius: 5rem;
   padding: 0.4rem;
-  background-image: url('/img/background.svg');
+  background-image: url('../img/background.svg');
   background-size: cover;
   background-position: 70%;
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -133,7 +133,7 @@ header.container {
 
 /* free nft section */
 .free-nft-section {
-  background-image: url('/img/background.svg');
+  background-image: url('../img/background.svg');
   background-position: 10%;
   background-size: cover;
   padding-top: 12.2em;

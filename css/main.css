@@ -133,7 +133,7 @@ header.container {
 
 /* free nft section */
 .free-nft-section {
-  background-image: url('../img/background.svg');
+  background-image: url('.../img/background.svg');
   background-position: 10%;
   background-size: cover;
   padding-top: 12.2em;

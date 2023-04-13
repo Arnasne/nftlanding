@@ -92,7 +92,7 @@
 
   /* free nft section */
   .free-nft-section {
-    background: url('/img/background.svg') no-repeat;
+    background: url('../img/background.svg') no-repeat;
     background-size: cover;
     padding-top: 15.4rem;
     padding-left: 6.4rem;

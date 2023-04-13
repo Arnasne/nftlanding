@@ -1,0 +1,186 @@
+@media screen and (max-width: 427px) {
+  .companies-section {
+    justify-content: space-around;
+    grid-template-areas:
+      'boom'
+      'blimp'
+      'qrco'
+      'droplet';
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .footer-middle-links {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .header-avatar {
+    max-width: 57rem;
+  }
+
+  .line {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .free-nft-section {
+    border-radius: 2rem;
+    margin-left: 3.2rem;
+    margin-right: 3.2rem;
+    margin-bottom: 12rem;
+  }
+
+  .companies-section {
+    justify-content: space-around;
+    grid-template-areas: 'boom blimp qrco droplet';
+  }
+
+  .boom-desktop-tablet-hidden {
+    display: none;
+  }
+
+  .boomerang-co-hidden {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  header.container {
+    padding-top: 7em;
+    padding-bottom: 18.2em;
+  }
+
+  .navigation {
+    display: inherit;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  nav {
+    margin-bottom: 18rem;
+  }
+
+  .launching-soon-left-container {
+    max-width: 56rem;
+  }
+
+  .launching-soon-article {
+    padding-bottom: 0;
+  }
+
+  .heading-1 {
+    font-size: 9.6rem;
+    font-weight: 900;
+    margin-bottom: 2.4rem;
+    line-height: 116.18px;
+  }
+
+  .header-avatar {
+    top: 18%;
+    max-width: 80rem;
+  }
+
+  /* free nft section */
+  .free-nft-section {
+    background: url('/img/background.svg') no-repeat;
+    background-size: cover;
+    padding-top: 15.4rem;
+    padding-left: 6.4rem;
+    padding-bottom: 6.4rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    margin-bottom: 12rem;
+  }
+
+  /* companies section */
+  .companies-section {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 12em;
+    margin: 0;
+  }
+
+  .open-door-hidden {
+    display: flex;
+  }
+
+  .boom-desktop-tablet-hidden {
+    display: none;
+  }
+
+  /* auction section */
+  .auction-section .text {
+    margin-bottom: 5.6rem;
+  }
+
+  .auction-section {
+    padding-bottom: 12em;
+    margin: 0;
+  }
+
+  /* cta */
+  .cta {
+    padding-top: 12em;
+    padding-bottom: 12em;
+  }
+
+  .heading-2 {
+    line-height: 67.77px;
+    margin-bottom: 2.4rem;
+  }
+
+  .cta-left-container {
+    min-width: 100%;
+  }
+
+  .cta .text {
+    max-width: 51.7rem;
+    margin-bottom: 4rem;
+  }
+
+  .cta-img {
+    left: 64%;
+  }
+
+  /* footer section */
+  footer.container {
+    padding-top: 12rem;
+    padding-bottom: 7.1rem;
+  }
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-top {
+    margin-bottom: 0;
+  }
+
+  .footer-middle-links {
+    align-items: flex-start;
+    margin-bottom: 12rem;
+    gap: 10.6rem;
+  }
+
+  .copy-info-display-none {
+    display: inherit;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  html {
+    width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

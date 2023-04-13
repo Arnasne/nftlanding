@@ -1,0 +1,389 @@
+html {
+  --white: #fff;
+  --eee: #eeeeee;
+  --text-dark: #111111;
+  --text-p-gray: #555555;
+  --text-numbers-gray: #777777;
+  --text-menu-copyright: #999999;
+  --text-orange: #ff8139;
+  --pink: #ff3998;
+}
+
+body {
+  background-color: var(--white);
+  font-family: 'Inter', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* navigation section */
+nav {
+  margin-bottom: 8rem;
+}
+
+.navigation {
+  display: none;
+  gap: 2.8rem;
+}
+
+.nav-link {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--text-p-gray);
+  transition: 0.2s ease;
+}
+
+.nav-link:last-child {
+  color: var(--pink);
+}
+
+.nav-link:hover {
+  color: var(--pink);
+}
+
+.menu {
+  cursor: pointer;
+  max-height: 2.2rem;
+  display: flex;
+  align-self: center;
+}
+
+/* hero section */
+header.container {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding-top: 3.2em;
+  padding-bottom: 8em;
+}
+
+.launching-soon-container {
+  display: flex;
+}
+
+.heading-1 {
+  font-size: 4.8rem;
+  font-weight: 900;
+  margin-bottom: 2.4rem;
+  line-height: 58.09px;
+}
+
+.launching-soon-left-container {
+  min-width: 27.4rem;
+  max-width: 27rem;
+}
+
+.soon-text {
+  color: var(--pink);
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 19.36px;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-bottom: 2.4rem;
+}
+
+.text {
+  margin-bottom: 4.1rem;
+  color: var(--text-p-gray);
+}
+
+.header-avatar {
+  min-width: 42rem;
+  position: absolute;
+  left: 48%;
+  top: 9%;
+  z-index: -1;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  border: none;
+  background-color: var(--white);
+  padding: 1.1em 2.6em;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: 'Inter', Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 3rem;
+  transition: 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 5rem;
+  padding: 0.4rem;
+  background-image: url('/img/background.svg');
+  background-size: cover;
+  background-position: 70%;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.btn:hover {
+  transform: scale(110%);
+}
+
+.btn:active {
+  transform: scale(95%);
+}
+
+/* free nft section */
+.free-nft-section {
+  background-image: url('/img/background.svg');
+  background-position: 10%;
+  background-size: cover;
+  padding-top: 12.2em;
+  padding-bottom: 3.2em;
+  margin-bottom: 6.4rem;
+}
+
+.free-nft-section .title {
+  font-size: 4rem;
+  font-weight: 500;
+  margin-bottom: 1.6rem;
+  line-height: 48.41px;
+}
+
+.free-nft-section .text {
+  color: var(--text-dark);
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+/* companies section */
+.companies-section {
+  margin-bottom: 5.6rem;
+  display: grid;
+  row-gap: 2.8rem;
+  justify-content: space-around;
+  grid-template-areas:
+    'boom blimp'
+    'qrco droplet';
+}
+
+.boom-desktop-tablet-hidden {
+  grid-area: boom;
+}
+
+.blimp {
+  grid-area: blimp;
+}
+
+.qrco {
+  grid-area: qrco;
+}
+
+.droplet {
+  grid-area: droplet;
+}
+
+.boomerang-co-hidden {
+  display: none;
+}
+
+.open-door-hidden {
+  display: none;
+}
+
+/* auction section */
+.auction-section {
+  margin-bottom: 8rem;
+  padding-right: 0;
+}
+
+.auction-section .title {
+  margin-bottom: 2.4rem;
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 48.41px;
+}
+
+.auction-section .text {
+  font-weight: 500;
+}
+
+.underline {
+  font-weight: 500;
+  border-bottom: 2px solid var(--text-p-gray);
+  color: var(--text-p-gray);
+  transition: 0.2s ease;
+}
+
+.underline:hover {
+  border-bottom: 2px solid var(--pink);
+}
+
+.auction-article {
+  margin-bottom: 4rem;
+}
+
+/* nft cards section */
+.nft-row {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4rem;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.nft-img {
+  display: flex;
+}
+
+.nft-cards-container {
+  background-color: var(--eee);
+  width: 29rem;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  padding: 2.4em 2.3em 2.4em 2.4em;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  position: relative;
+  bottom: 1.2rem;
+}
+
+/* nft cards styles */
+.nft-card-series {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--text-orange);
+  margin-bottom: 1.2rem;
+  line-height: 1.2rem;
+}
+
+.nft-card-top-bid {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text-numbers-gray);
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+  line-height: 1.2rem;
+}
+
+.nft-card-name-amount {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+  justify-content: space-between;
+  line-height: 2rem;
+  align-items: center;
+}
+
+.nft-card-nunmber-day-left {
+  font-size: 1.8rem;
+  color: var(--text-numbers-gray);
+  line-height: 1.8rem;
+}
+
+/* launching soon CTA section */
+.cta {
+  border-top: 2px solid hsla(0, 0%, 7%, 8%);
+  padding-top: 6.4em;
+  padding-bottom: 6.6em;
+  border-bottom: 2px solid hsla(0, 0%, 7%, 8%);
+  position: relative;
+  overflow-x: hidden;
+  z-index: 2;
+}
+
+.line {
+  border: none;
+  border-bottom: 2px solid hsla(0, 0%, 7%, 8%);
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 51.4%;
+  margin: 0;
+  z-index: 1;
+}
+
+.cta-left-container {
+  max-width: 20.7rem;
+}
+
+.heading-2 {
+  font-size: 5.6rem;
+  font-weight: 900;
+  margin-bottom: 2.4rem;
+}
+
+.cta .text {
+  margin-bottom: 3.2rem;
+}
+
+.cta-img {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 59.1%;
+}
+
+/* footer section */
+footer.container {
+  padding-top: 6.6rem;
+  padding-bottom: 10.5rem;
+}
+
+.footer-top {
+  margin-bottom: 6.4rem;
+}
+
+.footer-logo {
+  margin-bottom: 3rem;
+}
+
+.footer-title {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2rem;
+  color: var(--text-p-gray);
+  margin-bottom: 3.2rem;
+}
+
+.social-list {
+  gap: 1.6rem;
+  align-items: center;
+}
+
+.footer-middle-links {
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 4.2rem;
+}
+
+.footer-links-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 19.36px;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: var(--text-p-gray);
+  margin-bottom: 2.8rem;
+}
+
+.footer-link {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--text-p-gray);
+  margin-bottom: 1.7rem;
+  display: block;
+  transition: 0.2s ease;
+}
+
+.footer-link:hover {
+  color: var(--pink);
+}
+
+.copyright-info {
+  line-height: 20px;
+  color: var(--text-menu-copyright);
+}
+
+.copy-info-display-none {
+  display: none;
+}
